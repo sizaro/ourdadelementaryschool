@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <title>Welcome to Our School</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="School Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#faculty">Our Faculty</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="/login">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Welcome to Our School</h1>
+        <p>Empowering the next generation through quality education.</p>
+        <a href="#about" class="cta-button">Learn More</a>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>We are committed to providing an excellent educational experience. Our dedicated faculty and innovative programs are designed to inspire students and help them reach their full potential.</p>
+        <img src="about-image.jpg" alt="About Our School">
+    </section>
+
+    <section class="programs" id="programs">
+        <h2>Our Programs</h2>
+        <div class="program-card">
+            <img src="program1.jpg" alt="Program 1">
+            <h3>Program 1</h3>
+            <p>Brief description of Program 1.</p>
+        </div>
+        <div class="program-card">
+            <img src="program2.jpg" alt="Program 2">
+            <h3>Program 2</h3>
+            <p>Brief description of Program 2.</p>
+        </div>
+        <div class="program-card">
+            <img src="program3.jpg" alt="Program 3">
+            <h3>Program 3</h3>
+            <p>Brief description of Program 3.</p>
+        </div>
+        <!-- Add more program cards as needed -->
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <h2>What Our Students Say</h2>
+        <blockquote>
+            <p>"This school has changed my life!"</p>
+            <cite>- Happy Student</cite>
+        </blockquote>
+        <blockquote>
+            <p>"The faculty is amazing, and the programs are top-notch!"</p>
+            <cite>- Satisfied Parent</cite>
+        </blockquote>
+        <!-- Add more testimonials as needed -->
+    </section>
+
+    <section class="faculty" id="faculty">
+        <h2>Meet Our Faculty</h2>
+        <div class="faculty-member">
+            <img src="faculty1.jpg" alt="Faculty Member 1">
+            <h3>Faculty Member 1</h3>
+            <p>Brief description about Faculty Member 1.</p>
+        </div>
+        <div class="faculty-member">
+            <img src="faculty2.jpg" alt="Faculty Member 2">
+            <h3>Faculty Member 2</h3>
+            <p>Brief description about Faculty Member 2.</p>
+        </div>
+        <!-- Add more faculty members as needed -->
+    </section>
+
+    <section class="events" id="events">
+        <h2>Upcoming Events</h2>
+        <div class="event">
+            <h3>Event 1</h3>
+            <p>Date: January 1, 2024</p>
+            <p>Description of Event 1.</p>
+        </div>
+        <div class="event">
+            <h3>Event 2</h3>
+            <p>Date: February 1, 2024</p>
+            <p>Description of Event 2.</p>
+        </div>
+        <!-- Add more events as needed -->
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form action="/submit-contact" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Our School. All rights reserved.</p>
+    </footer>
+</body>
+</html>
