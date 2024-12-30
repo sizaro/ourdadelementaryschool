@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/student-management.css">
+    <title>Manage Students</title>
+</head>
+<body>
+    <header>
+        <h1>Manage Students</h1>
+        <nav>
+            <ul>
+                <li><a href="/dashboard">Dashboard</a></li>
+                <li><a href="/logout" class="signout-btn">Sign Out</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Search Functionality -->
+        <section class="search">
+            <h2>Search Students</h2>
+            <form>
+                <input id="studentSearchInput" type="text" name="search" placeholder="Search by name or grade" required>
+                <button id="searchButton" type="button">Search</button>
+            </form>
+        </section>
+
+        <!-- Overview Statistics -->
+        <section class="overview-stats">
+            <h2>Overview</h2>
+            <div class="grid-container">
+                <div class="stat">
+                    <h3>Total Students</h3>
+                    <p>450</p>
+                </div>
+                <div class="stat">
+                    <h3>Average Attendance</h3>
+                    <p>92%</p>
+                </div>
+                <div class="stat">
+                    <h3>At-Risk Students</h3>
+                    <p>15</p>
+                </div>
+                <div class="stat">
+                    <h3>Top Performer</h3>
+                    <p>Alice Johnson (Grade 6)</p>
+                </div>
+                <div class="stat">
+                    <a href="/dashboard/addStudent">
+                        <h3>Add New Student</h3>
+                        <p>Registration</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Students List -->
+        <section class="student-list">
+            <h2>Students</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Grade</th>
+                        <th>Attendance</th>
+                        <th>Performance</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="/students/1">Alice Johnson</a></td>
+                        <td>Grade 6</td>
+                        <td>95%</td>
+                        <td>Top 5%</td>
+                        <td><button>Send Message</button></td>
+                    </tr>
+                    <tr>
+                        <td><a href="/students/2">Bob Brown</a></td>
+                        <td>Grade 5</td>
+                        <td>89%</td>
+                        <td>Average</td>
+                        <td><button>Send Message</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="studentProfileContainer">
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Our Dad Elementary School</p>
+    </footer>
+    <script src="/js/allstudents.js"></script>
+</body>
+</html>

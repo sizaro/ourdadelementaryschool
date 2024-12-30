@@ -13,16 +13,14 @@ router.get('/login', userController.getSignInPage);
 
 
 // Route for adding a new student
-router.post('/add-student', userController.addStudent);
-
-router.post('/account/user1', accountCont.verifyUser);
+//router.post('/add-student', userController.addStudent);
 
 
 // Protected route for the director's dashboard
-router.get('/director', middleWare.authenticateToken, accountCont.directorDashboard)
+//router.get('/director', middleWare.authenticateToken, accountCont.directorDashboard)
 
 // Route for logout
-router.get('/logout', accountCont.logoutUser)
+//router.get('/logout', accountCont.logoutUser)
 
 // Export the router
 module.exports = router;

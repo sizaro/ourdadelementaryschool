@@ -10,7 +10,7 @@ async function testconnection() {
     }
 }
 
-let pool    
+let pool;    
 
 if(process.env.NODE_ENV =="development"){
 
